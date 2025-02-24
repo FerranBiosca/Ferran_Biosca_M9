@@ -28,6 +28,14 @@ SET time_zone = "+00:00";
 -- Estructura de la taula `usuaris`
 --
 
+CREATE USER anna7 IDENTIFIED BY 'anna7';
+GRANT ALL PRIVILEGES ON *.* to anna7;
+FLUSH PRIVILEGES;
+
+CREATE DATABASE anna_lea_iticdesk_1;
+
+USE anna_lea_iticdesk_1;
+
 CREATE TABLE `usuaris` (
   `DNI` int NOT NULL,
   `nom` text NOT NULL,
